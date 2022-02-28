@@ -1,0 +1,108 @@
+@import "./_fonts"
+@import "./_icones"
+
+/*GENERAL*/
+
+*
+    margin: 0
+    padding: 0
+
+
+body
+    background: #fff
+    font-family: "Vietnam Pro"
+    overflow: hidden
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+
+/*MENU NAVIGATION*/
+
+* 
+    margin: 0px
+    padding: 0px
+        
+  
+#sidebar 
+    position: absolute
+    width: 170px
+    height: 100%
+    left: -170px
+    transition: 1.2s
+    background: #fff
+    border-right: 2px solid lightgrey
+    opacity: 0.1
+        
+#sidebar #menulist
+    margin-top: 150px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+#sidebar #reseaux
+    margin-top: 200px
+    display: flex
+    justify-content: space-around
+
+#sidebar #menulist li
+    display: flex 
+    justify-content: center
+    padding: auto 40px
+    margin-bottom: 14vh
+
+#sidebar #reseaux li
+    margin-bottom: 10px
+
+#sidebar #menulist li a
+    color: lightgrey
+    font-size: 22px
+
+    &:hover
+        text-decoration: underline
+
+#sidebar #reseaux li i
+    color: lightgrey
+    font-size: 22px
+
+    &:hover
+        color: white
+        transform: scale(1.4)
+        cursor: pointer
+
+.toggle-btn 
+    position: absolute
+    top: 30px
+    left: 50%
+        
+  
+.toggle-btn i 
+    font-size: 35px
+    color: black
+    cursor: pointer
+    opacity: 0.7
+
+    &:hover
+        opacity: 1
+
+#sidebar.active 
+    left: 0
+    background: #222
+    opacity: 1
+        
+/*HEADER*/
+
+header
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+    h1
+        font-family: 'Vietnam Pro'
+        color: white
+        font-size: 50px
+        text-align: center
